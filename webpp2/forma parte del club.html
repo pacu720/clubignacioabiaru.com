@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postulate</title>
+    <link rel="stylesheet" href="estilos/estilos.css" />
+  </head>
+
+  <body id="formulario" class="formulario">
+    <div class="header">
+      <img src="imagenes/logo_fondo/logo_abiaru1.png" alt="logo" width="100px" id="logo_abiaru"/>
+      <h1>Asegura tu lugar en el club</h1>
+    </div>
+    <div class="contenedor">
+      <h2>¡Llena el Formulario!</h2>
+      <div class="elementos">
+        <form action="">
+          <label for="datoNombre">Apellido y Nombre</label>
+          <input type="text" id="datoNombre" placeholder="Escribe tu Apellido y Nombre"required/>
+          <br>
+          <br>
+          <label for="datoEdad">Edad</label>
+          <input type="number" id="datoEdad" placeholder="Escribe tu Edad" required/>
+          <br>
+          <br>
+          <label for="datoDni">Dni</label>
+          <input type="number" id="datoDni" placeholder="Escribe tu Dni" />
+          <br>
+          <br>
+          <label for="datoPosicion">Posicion</label>
+          <select id="datoPosicion">
+            <option value="Defensor">Defensor</option>
+            <option value="Medio campo">Medio Campo</option>
+            <option value="Delantero">Delantero</option>
+            <option value="Cuerpo Tecnico">Cuerpo Tecnico</option>
+          </select>
+          <br>
+          <br>
+          <label for="datoTelefono">Telefono</label>
+          <input type="tel" id="datoTelefono" placeholder="Escribe tu Nº de Telefono"/>
+          <br>
+          <br>
+          <a href="#" onclick="enviar()" id="btnEnviar" class="onclick">Enviar</a
+          >
+        </form>
+      </div>
+    </div>
+
+    <hr>
+    <div class="volver">
+      <a href="index.html">Volver</a>
+    </div>
+    
+    <footer>
+      <!-- Información de contacto -->
+      <p>&copy; 2023 Club Social y Deportivo Ignacio Abiaru </p>
+      <p>Dirección: Calle Principal, Ciudad, Provincia</p>
+      <p>Teléfono: +123 456 789</p>
+      <p>Email: info@clubabiaru.com</p>
+
+      <!-- Logos de auspiciantes -->
+      <div class="auspiciantes">
+          <img src="https://www.viacargo.com.ar/static/media/logo.5211466d.png" alt="Auspiciante 1" style="width: 150PX;height: 74PX; margin: 0 0 30px ;">
+          <img src="imagenes/auspiciante/AFUVEPI.png" alt="Auspiciante 2" style="margin: 0 20px 30px;">
+          <img src="imagenes/auspiciante/logo_quita.png" alt="Auspiciante 3" style=" width: 200px; height: 150px; margin: 0;" >
+          <img src="imagenes/auspiciante/logo_3+R.png" alt="Auspiciante 4" style="margin: 0px;">
+          <img src="imagenes/auspiciante/logo_CECI.png" alt="Auspiciante 5">
+          <img src="imagenes/auspiciante/logo_LM.png" alt="Auspiciante 6">
+      </div>
+  </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

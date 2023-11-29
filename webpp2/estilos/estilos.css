@@ -1,0 +1,423 @@
+html{
+    height: 100%;
+}
+
+h1 ,h2{
+    color: white;
+}
+
+a{
+    text-align: center;
+    color: white;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse:collapse;
+    color: white;
+    padding:3px;
+  
+}
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifç;
+    color: white;
+    text-align: center;
+}
+th{
+    background-color: rgb(18, 18, 112);
+    color: white;
+}
+
+table {
+    width: 50%;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+/* renglones pares*/
+tr:nth-child(even){
+    background-color: rgb(71, 147, 210);
+}
+/* renglones impares*/
+tr:nth-child(odd){
+    background-color: rgb(30, 194, 194);
+}
+/*menu navegacion*/
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(53, 17, 150);
+    margin: 0;
+    padding: 0;
+}
+
+/* ordenar la lista de forma horizontal de forma ordenada*/
+li {
+    float: left;
+    margin: 0 , 10px;
+}
+
+li a{
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+
+}
+/* linea para que cambien de color cuando estoy encima de la barra de navegacion*/
+li a:hover{
+    background-color: rgb(12, 29, 54);
+}
+
+/* titulo con logo*/
+.header {
+   display: flex;
+    align-items: center;
+    margin:20px;
+    padding: 0;
+    margin-bottom: 0;
+    text-align: center;
+   
+}
+#logo_abiaru {
+    margin-right: 10px;
+}
+
+
+
+.volver {
+    margin: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.intro {
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+
+}
+.formulario {
+    /* background: linear-gradient(rgba(13, 13, 187),#44abf5); */
+    margin: 0;
+    padding: 0;
+}
+
+
+.contenedor {
+    margin: 30px auto;
+    width: 400px;
+    padding: 30px;
+    background: linear-gradient(rgba(59, 78, 124, 0.75), rgba(5,7,12,0.75)), url(../imagenes/logo_fondo/fondo_pelota.jpg) no-repeat center center fixed;
+
+}
+.formulario label {
+    color: white;
+}
+.formulario h2 {
+    text-align: center;
+    margin-top: 0;
+    padding: 0;
+}
+.contenedor .elementos input {
+    width: 100%;
+    padding: 10px, 100px;
+    background: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.contenedor .elementos a {
+    margin: 150px;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 50px;
+    
+}
+
+.contenedor .elementos select {
+    background: transparent;
+    
+}
+.formulario h1{
+    text-align: center;
+    font-family: cursive;
+}
+.formulario .header {
+    margin-left: 30%;
+}
+
+.formulario {
+    color: rgb(45, 15, 94);
+    text-decoration: none;
+    padding: 20px
+    
+}
+section.bienvenida {
+    background-color: rgb(53, 17, 150, 0.5);
+    width: 95%;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 1px 0 4px rgb(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+section.revivi {
+    margin-left: auto;
+    height: 5px;
+    float: left;
+    padding: 20px 100px;
+    box-sizing: border-box;
+    
+}
+
+
+section h1 {
+    text-align: center;
+    padding: 1px;
+    margin: 10px;
+    
+}
+
+section.revivi img {
+    max-width: 100%;
+    max-height: 900px; 
+    display: block; 
+    margin: 0 auto;
+}
+
+
+
+aside {
+    width: 70%;
+    float: right; 
+    margin: 20px;
+    background-color: rgb(53, 17, 150);
+    color: white;
+    padding: 20px;
+    
+}
+aside p {
+    text-align: justify;
+}
+
+body {
+    margin:0  150px; 
+    padding: 0;
+    background-color: rgba(0, 0, 255, 0.8);
+}
+.container {
+    margin: 0 10%; 
+    padding: 20px; 
+}
+
+footer {
+    background-color: rgba(49, 49, 142, 0.8);
+    border-radius: 20px;
+    color: white;
+    padding: 0.5px;
+    text-align: center;
+    height: 10%;
+    clear: both;
+}
+
+/* Estilos para los logotipos de auspiciantes en el footer */
+.footer-auspiciantes {
+    padding: 0, 0.5PX;
+    margin-top: 0%
+}
+
+.auspiciantes img {
+    width: 9%; 
+    margin: 0 20px 15px 20px; 
+}
+
+footer p {
+    display: inline-block;
+    margin:15px 0.5px 0 10px; 
+}
+
+
+/*fotos revivi campeon*/
+
+.fotos_campeon {
+    max-width: 1200;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+    padding: 100px 0;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box:nth-child(1){
+    grid-column-start: span 2;
+}
+    
+.box:nth-child(4){
+    grid-column-start: span 2;
+}
+
+/*css para ver en disp. mobiles*/
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0 10px; /* Ajusta el margen para dispositivos más pequeños */
+        font-size: 16px; /* Ajusta el tamaño de la fuente para una mejor legibilidad en dispositivos pequeños */
+    }
+
+    .container {
+        margin: 0;
+    }
+    
+}
+
+/* Estilos para las Redes Sociales */
+.redes-sociales {
+    text-align: right;
+    margin-top: 70px;
+    margin-left: 320px;
+
+}
+
+.redes-sociales a {
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.redes-sociales img {
+    width: 30px; /* Ajusta el tamaño de los logos según sea necesario */
+    height: 30px;
+    vertical-align: middle; /* Alinea verticalmente los logos con el texto */
+    
+}
+
+body.Inicio h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+/*seccion link historia*/
+body.Inicio p.historia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    text-align: justify;
+}
+
+.conteiner_historia {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#img1 {
+    float: left;
+    margin-right: 20px;
+
+
+}
+
+/*estilos del body del index*/
+
+.conteiner_body {
+    display: flex;
+    /* overflow: hidden; */
+    vertical-align: top;
+    color: white;
+    font-size: 15px;
+}
+.nov-home-dest-copete {
+    font-size: 15px;
+    color: white;
+    margin-left: 0;
+    max-width: 370px; /* El máximo ancho del párrafo será igual al ancho de la imagen */
+    margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
+}
+
+.foto img {
+    width: 90%; /* La imagen ocupará el 100% del ancho del contenedor padre */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+/* Estilos para la sección de Jugadores */
+.jugadores {
+    background-color: rgb(53, 17, 150, 0.5);
+    width: 95%;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 1px 0 4px rgb(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 15px;  
+    /* overflow: hidden; */
+    /* margin: 20px 0; */
+}
+
+.jugador {
+    border: 2px solid rgb(39, 39, 174);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.jugador img {
+    margin: 0 15px;
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.jugador h3 {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.jugador p {
+    text-align: left;
+    font-size: 17px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección de Revivi */
+.revivi {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.revivi h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.revivi img {
+    border-radius: 8px;
+}
+
+
+
